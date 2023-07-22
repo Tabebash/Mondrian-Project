@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    :root, html {
+      min-height: 100%;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .painting-container {
+      background-color: #000;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+      width:748px;
+    }
+
+    .grey {
+      background-color: #F0F1EC;
+    }
+
+    .tile-1 {
+      background-color: #E72F24;
+    }
+
+    .tile-2 {
+      grid-column: span 3;
+    }
+
+    .tile-3 {
+      grid-row: span 2;
+    }
+
+    .tile-4 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .tile-5 {
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+
+    .tile-6 {
+      grid-row: span 2;
+    }
+
+    .tile-8 {
+      background-color:#F9D01E
+      
+    }
+
+    .tile-9 {
+      background-color: #232629;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="painting-container">
+    <div class="tile-1"></div>
+    <div class="tile-2 grey"></div>
+    <div class="tile-3 grey"></div>
+    <div class="tile-4 grey"></div>
+    <div class="tile-5"></div>
+    <div class="tile-6 grey"></div>
+    <div class="tile-7 grey"></div>
+    <div class="tile-8"></div>
+    <div class="tile-9"></div>
+  </div>
+</body>
+
+</html>
